@@ -10,6 +10,7 @@ Route::get('/home', function () {
 });
 
 Auth::routes(['register' => false]);
+//Auth::routes();
 
 Route::post('tickets/media', 'TicketController@storeMedia')->name('tickets.storeMedia');
 Route::post('tickets/comment/{ticket}', 'TicketController@storeComment')->name('tickets.storeComment');
